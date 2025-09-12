@@ -11,6 +11,10 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
@@ -23,10 +27,67 @@ body {
   color: white;
   font-size: 50px;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  border: 2px solid black;
+  width: 500px;
+}
+
+.form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
 
 .form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 20px;
+}
+
+.label {
+  flex: 1;
+  text-align: right;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.input {
+  flex: 2;
+  font-size: 15px;
+  background-color: rgb(153, 161, 158);
+  outline: none;
+  border: 1px solid rgb(78, 78, 70);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  background-color: rgb(109, 28, 185);
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid rgb(41, 43, 41);
+  cursor: pointer;
+  font-size: 15px;
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgb(41, 41, 132);
 }

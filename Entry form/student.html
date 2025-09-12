@@ -9,45 +9,73 @@
   <body>
     <div class="container">
       <h1 class="title">Student Form</h1>
-      <form class="form">
-        <div>
-          <label for="firstname">First Name:</label>
-          <input
-            type="text"
-            name="firstname"
-            id="firstname"
-            placeholder="firstname"
-          />
-        </div>
-        <div>
-          <label for="lastname">Last Name :</label>
-          <input
-            type="text"
-            name="lastname"
-            id="lastname"
-            placeholder="lastname"
-          />
-        </div>
-        <div>
-          <label for="DOB">Date of Birth:</label>
-          <input type="date" name="DOB" id="DOB" placeholder="DOB" />
-        </div>
-
-        <div>
-          <label for="gender">Gender:</label>
-          <select name="gender" id="gender">
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-          </select>
-        </div>
-
-        <div>
+      <div class="form-container">
+        <form class="form">
           <div>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" placeholder="email" />
+            <label for="firstname" class="label">First Name:</label>
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="firstname"
+              class="input"
+            />
           </div>
-        </div>
-      </form>
+          <div>
+            <label for="lastname" class="label">Last Name :</label>
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="lastname"
+              class="input"
+            />
+          </div>
+          <div>
+            <label for="DOB" class="label">Date of Birth:</label>
+            <input
+              type="date"
+              name="DOB"
+              id="DOB"
+              placeholder="DOB"
+              class="input"
+            />
+          </div>
+
+          <div>
+            <label for="gender" class="label">Gender:</label>
+            <select name="gender" id="gender" class="input">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+
+          <div class="contact-info">
+            <div>
+              <label for="email" class="label">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email"
+                class="input"
+              />
+            </div>
+            <div>
+              <label for="tel" class="label">Phone No.</label>
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="tel"
+                class="input"
+              />
+            </div>
+          </div>
+
+          <button class="btn">Submit</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>

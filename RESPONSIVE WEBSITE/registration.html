@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <a href="home.html"
+          ><img
+            src="images/logo.jpg"
+            alt="logo"
+            height="80px"
+            width="80px"
+            class="logo"
+        /></a>
+        <h1 class="title">BookNest</h1>
+        <div class="links">
+          <a href="catalog.html">Catalog</a>
+          <a href="login.html">Login</a>
+          <a href="registration.html">Registration</a>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <form class="login-form">
+          <div>
+            <label class="label" for="firstname">First Name: </label>
+            <input
+              type="text"
+              name="firstname"
+              placeholder="first Name"
+              id="firstname"
+              class="input"
+            />
+          </div>
+
+          <div>
+            <label class="label" for="LastName">Last Name: </label>
+            <input
+              type="text"
+              name="LastName"
+              id="LastName"
+              placeholder="Last Name"
+              class="input"
+            />
+          </div>
+
+          <div>
+            <label class="label" for="contactno.">Contact No.: </label>
+            <input
+              type="tel"
+              name="contactno"
+              id="contactno"
+              placeholder="Contact No."
+              class="input"
+            />
+          </div>
+
+          <div>
+            <label class="label" for="Email">Email: </label>
+            <input
+              type="email"
+              name="Email"
+              id="Email"
+              placeholder="Email"
+              class="input"
+            />
+          </div>
+
+          <div>
+            <label class="label" for="address:">Address: </label>
+            <textarea
+              name="address"
+              id="address"
+              placeholder="address"
+              class="input"
+            ></textarea>
+          </div>
+          <button class="btn">Register</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

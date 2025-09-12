@@ -1,54 +1,78 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-image: url("https://images.unsplash.com/photo-1516638489986-0c17c234db55?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGxpZ2h0JTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D");
+  /* background-color: #1a1a1a; */
+  background-image: url("https://images.pexels.com/photos/4855428/pexels-photo-4855428.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  color: rgb(249, 249, 249);
+  overflow-y: hidden;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   height: 100%;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  border-radius: 100%;
+  margin-left: 60px;
+  margin: 10px;
 }
 
 .title {
-  margin: 30px;
+  font-size: 40px;
+}
+
+.links {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 50px;
+  min-width: 250px;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .form-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px;
-  border: 2px solid black;
-  width: 500px;
+  margin-top: 100px;
 }
-.form div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 15px;
-}
-.form {
+
+.login-form {
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  gap: 10px;
+  border: 5px solid rgb(72, 70, 70);
+  border-radius: 20px;
+  width: 400px;
+  height: 200px;
+}
+
+.login-form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .label {
@@ -68,10 +92,16 @@ body {
   padding: 5px;
 }
 
-.contact-info {
+.buttonclass {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
+
+.fpass {
+  font-size: 18px;
+}
+
 .btn {
   background-color: rgb(109, 28, 185);
   padding: 10px;
